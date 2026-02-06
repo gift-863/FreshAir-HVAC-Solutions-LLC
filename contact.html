@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact FreshAir HVAC Solutions, LLC | West Palm Beach, FL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact FreshAir HVAC Solutions, LLC for professional HVAC services in West Palm Beach, FL. Call (561) 934-4111 or visit our location.">
+
+<style>
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:#f5f7fb;
+  color:#222;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:16px 70px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(2,29,79,0.75);
+  backdrop-filter:blur(8px);
+  z-index:1000;
+}
+.navbar .logo{
+  font-size:24px;
+  font-weight:700;
+  color:#fff;
+}
+.navbar a{
+  color:#fff;
+  margin-left:28px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO HEADER */
+.hero{
+  height:70vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1581092160562-40aa08e78837") center/cover no-repeat;
+  clip-path:ellipse(85% 75% at 50% 0%);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  padding-top:120px;
+  position:relative;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  bottom:-1px;
+  left:0;
+  width:100%;
+  height:130px;
+  background:#82a7b1;
+  border-top-left-radius:100% 80px;
+  border-top-right-radius:100% 80px;
+}
+
+.hero h1{
+  font-size:46px;
+  margin-bottom:12px;
+}
+.hero p{
+  font-size:19px;
+}
+
+/* MAIN SECTION */
+.section{
+  max-width:1200px;
+  margin:-100px auto 0;
+  background:#dde0e9;
+  border-radius:28px;
+  padding:80px 60px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.12);
+}
+
+.section h2{
+  font-size:34px;
+  margin-bottom:14px;
+}
+
+.section p{
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+/* CONTACT GRID */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  margin-top:40px;
+}
+
+/* INFO BOXES */
+.info-box{
+  background:#618f9c;
+  border-radius:22px;
+  padding:32px;
+  margin-bottom:25px;
+}
+
+.info-box h3{
+  margin-bottom:10px;
+}
+
+.info-box a{
+  color:#0b5ed7;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* FORM */
+form input, form textarea{
+  width:100%;
+  padding:16px;
+  border-radius:12px;
+  border:1px solid #889dc5;
+  margin-bottom:18px;
+  font-size:16px;
+}
+
+form textarea{
+  resize:none;
+  height:140px;
+}
+
+form button{
+  background:linear-gradient(135deg,#618f9c,#618f9c);
+  color:#000000;
+  padding:16px 40px;
+  border:none;
+  border-radius:50px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* MAP */
+.map-box{
+  margin-top:70px;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 20px 45px rgba(37, 37, 37, 0.15);
+  position:relative;
+}
+.map-box iframe{
+  width:100%;
+  height:420px;
+  border:0;
+}
+.map-overlay{
+  position:absolute;
+  inset:0;
+}
+
+/* FOOTER */
+footer{
+  margin-top:80px;
+  background:#032057;
+  color:#ffffff;
+  text-align:center;
+  padding:26px;
+}
+
+@media(max-width:900px){
+  .contact-grid{grid-template-columns:1fr;}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">FreshAir HVAC</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<section class="hero">
+  <h1>Contact Us</h1>
+  <p>Get in touch with our HVAC experts today</p>
+</section>
+
+<section class="section">
+  <h2>Let’s Talk About Your HVAC Needs</h2>
+  <p>
+    Need air conditioning repair, system installation, or professional HVAC advice?
+    Contact FreshAir HVAC Solutions, LLC today. Our team is ready to help homeowners
+    and businesses across West Palm Beach, Florida.
+  </p>
+
+  <div class="contact-grid">
+    <div>
+      <div class="info-box">
+        <h3>📞 Phone</h3>
+        <a href="tel:+15619344111">(561) 934-4111</a>
+      </div>
+      <div class="info-box">
+        <h3>📍 Address</h3>
+        <p>4061 Royal Palm Beach Blvd,<br>West Palm Beach, FL 33411</p>
+      </div>
+      <div class="info-box">
+        <h3>⏰ Business Hours</h3>
+        <p>Monday – Saturday: 8:00 AM – 7:00 PM<br>Emergency Service Available</p>
+      </div>
+    </div>
+
+```
+<div>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="tel" placeholder="Your Phone Number" required>
+    <textarea placeholder="How can we help you?" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+```
+
+  </div>
+
+  <div class="map-box">
+    <iframe src="https://www.google.com/maps?q=4061+Royal+Palm+Beach+Blvd,+West+Palm+Beach,+FL+33411&output=embed"></iframe>
+    <a class="map-overlay" href="https://maps.app.goo.gl/hyFs8wTciarTTb9i8" target="_blank"></a>
+  </div>
+</section>
+
+<footer>
+  © 2026 FreshAir HVAC Solutions, LLC | All Rights Reserved
+</footer>
+
+</body>
+</html>

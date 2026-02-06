@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HVAC Services | FreshAir HVAC Solutions, LLC</title>
+
+<meta name="description" content="FreshAir HVAC Solutions, LLC offers professional HVAC services including AC repair, installation, maintenance, and commercial HVAC solutions in West Palm Beach, FL.">
+
+<style>
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:#f4f7fb;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:18px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:100;
+  color:#fff;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:700;
+}
+
+.navbar a{
+  color:#fff;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* SERVICES HERO – DYNAMIC IMAGE EFFECT + CONVEX SHAPE */
+.services-hero{
+  height:75vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea") center/cover no-repeat;
+  animation: zoomMove 18s infinite alternate ease-in-out;
+  clip-path: ellipse(88% 80% at 50% 0%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  padding-top:120px;
+}
+
+@keyframes zoomMove{
+  0%{ background-position:50% 50%; background-size:105%; }
+  50%{ background-position:52% 48%; background-size:110%; }
+  100%{ background-position:50% 50%; background-size:105%; }
+}
+
+.services-hero h1{
+  font-size:50px;
+  margin-bottom:15px;
+}
+
+.services-hero p{
+  font-size:20px;
+  max-width:760px;
+  line-height:1.6;
+}
+
+/* SERVICES CONTENT */
+.services-content{
+  max-width:1150px;
+  margin:-100px auto 0;
+  background:#fff;
+  border-radius:28px;
+  padding:90px 60px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.12);
+}
+
+.services-content h2{
+  font-size:34px;
+  margin-bottom:15px;
+}
+
+.services-content p{
+  font-size:18px;
+  line-height:1.9;
+  color:#333;
+  margin-bottom:35px;
+}
+
+/* SERVICE GRID */
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+
+.service-box{
+  background:#f8f9fc;
+  padding:22px;
+  border-radius:18px;
+  transition:0.3s ease;
+}
+
+.service-box:hover{
+  transform:translateY(-6px);
+}
+
+.service-box img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:15px;
+  display:block;
+}
+
+.service-box h3{
+  color:#0b5ed7;
+  margin-bottom:10px;
+  font-size:20px;
+}
+
+.service-box p{
+  font-size:16px;
+  line-height:1.7;
+  color:#333;
+}
+
+/* CTA */
+.services-cta{
+  margin-top:80px;
+  background:#0b5ed7;
+  color:#fff;
+  padding:50px;
+  border-radius:26px;
+  text-align:center;
+}
+
+.services-cta a{
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 45px;
+  background:#fff;
+  color:#0b5ed7;
+  text-decoration:none;
+  font-weight:700;
+  border-radius:40px;
+}
+
+/* FOOTER */
+footer{
+  margin-top:80px;
+  background:#021d4f;
+  color:#fff;
+  text-align:center;
+  padding:22px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">FreshAir HVAC</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="services-hero">
+  <div>
+    <h1>Our HVAC Services</h1>
+    <p>
+      Professional air conditioning and heating solutions designed for
+      residential and commercial comfort in West Palm Beach, Florida.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES BODY -->
+<section class="services-content">
+  <h2>Complete HVAC Services We Offer</h2>
+  <p>
+    At FreshAir HVAC Solutions, LLC, we provide a wide range of HVAC services
+    designed to meet the needs of both residential and commercial clients.
+    Each service is performed by experienced professionals using modern tools
+    and proven techniques to ensure quality, efficiency, and long-term comfort.
+  </p>
+
+  <div class="service-grid">
+
+    <div class="service-box">
+      <a href="https://mackenziefuels.com/wp-content/uploads/2024/02/image11.jpg" target="_blank">
+        <img src="https://mackenziefuels.com/wp-content/uploads/2024/02/image11.jpg" alt="AC Repair Service">
+      </a>
+      <h3>Air Conditioning Repair</h3>
+      <p>
+        Our AC repair services quickly diagnose and fix cooling issues,
+        ensuring your system runs efficiently even during extreme Florida heat.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <a href="https://callbuck.com/wp-content/uploads/2025/05/technician_ac_unit_repair_5-1024x685.jpg" target="_blank">
+        <img src="https://callbuck.com/wp-content/uploads/2025/05/technician_ac_unit_repair_5-1024x685.jpg" alt="AC Installation">
+      </a>
+      <h3>AC Installation & Replacement</h3>
+      <p>
+        We install high-performance, energy-efficient air conditioning systems
+        tailored to your property size and cooling requirements.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <a href="https://veteranschoiceinc.com/wp-content/uploads/2022/09/Furnace-Repair-What-Tips.jpg" target="_blank">
+        <img src="https://veteranschoiceinc.com/wp-content/uploads/2022/09/Furnace-Repair-What-Tips.jpg" alt="HVAC Maintenance">
+      </a>
+      <h3>HVAC Maintenance</h3>
+      <p>
+        Preventive maintenance helps reduce breakdowns, improve energy efficiency,
+        and extend the life of your HVAC system.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <a href="https://media.cmsmax.com/ww0c3uzx3xe4d3502epko/heating-services.jpg" target="_blank">
+        <img src="https://media.cmsmax.com/ww0c3uzx3xe4d3502epko/heating-services.jpg" alt="Heating Services">
+      </a>
+      <h3>Heating Services</h3>
+      <p>
+        Reliable heating repair and servicing to maintain comfort during
+        cooler seasons with safe and efficient operation.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <a href="https://freshairhvac.com.tr/wp-content/uploads/2024/09/fresh-air-hvac2.png" target="_blank">
+        <img src="https://freshairhvac.com.tr/wp-content/uploads/2024/09/fresh-air-hvac2.png" alt="Commercial HVAC">
+      </a>
+      <h3>Commercial HVAC Services</h3>
+      <p>
+        Scalable HVAC solutions for offices, retail spaces, and commercial
+        buildings to ensure uninterrupted operations.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <a href="https://images.unsplash.com/photo-1600566752355-35792bedcfea" target="_blank">
+        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea" alt="Indoor Air Quality">
+      </a>
+      <h3>Indoor Air Quality Solutions</h3>
+      <p>
+        Advanced filtration, ventilation, and air purification systems
+        designed to create healthier indoor environments.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="services-cta">
+    <h2>Schedule Your HVAC Service Today</h2>
+    <p>
+      Contact FreshAir HVAC Solutions, LLC for professional HVAC services
+      you can depend on in West Palm Beach, Florida.
+    </p>
+    <a href="tel:+15619344111">Call (561) 934-4111</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 FreshAir HVAC Solutions, LLC | All Rights Reserved
+</footer>
+
+</body>
+</html>

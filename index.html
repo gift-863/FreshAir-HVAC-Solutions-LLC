@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FreshAir HVAC Solutions, LLC | HVAC Services West Palm Beach, FL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FreshAir HVAC Solutions, LLC provides professional air conditioning and heating services in West Palm Beach, FL. Call (561) 934-4111 for trusted HVAC solutions.">
+
+<style>
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:#f5f7fb;
+  color:#222;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:16px 70px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(2,29,79,0.75);
+  backdrop-filter:blur(8px);
+  z-index:1000;
+}
+.navbar .logo{
+  font-size:24px;
+  font-weight:700;
+  color:#fff;
+}
+.navbar a{
+  color:#fff;
+  margin-left:28px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  height:92vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1604014237800-1c9102c219da") center/cover no-repeat;
+  clip-path:ellipse(85% 75% at 50% 0%);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  padding-top:120px;
+  position:relative;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  bottom:-1px;
+  left:0;
+  width:100%;
+  height:140px;
+  background:#f5f7fb;
+  border-top-left-radius:100% 80px;
+  border-top-right-radius:100% 80px;
+}
+.hero h1{
+  font-size:52px;
+  margin-bottom:14px;
+}
+.hero p{
+  font-size:20px;
+  max-width:760px;
+  line-height:1.6;
+}
+
+.hero .btn-primary{
+  margin-top:34px;
+  padding:16px 48px;
+  background:linear-gradient(135deg,#0b5ed7,#0a4fc0);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:16px;
+  border-radius:50px;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  box-shadow:0 14px 34px rgba(11,94,215,0.45);
+  transition:all .3s ease;
+}
+
+.hero .btn-primary::before{
+  content:"📞";
+  font-size:18px;
+}
+
+.hero .btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 40px rgba(11,94,215,0.55);
+}
+
+/* MAIN SECTIONS */
+.section{
+  max-width:1200px;
+  margin:0 auto;
+  padding:90px 60px;
+}
+
+.section.white{
+  background:#fff;
+  border-radius:26px;
+  margin-top:-120px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.12);
+}
+
+.section h2{
+  font-size:36px;
+  margin-bottom:22px;
+}
+.section p{
+  font-size:18px;
+  line-height:1.9;
+  color:#333;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+.feature{
+  background:#f2f5fb;
+  padding:30px;
+  border-radius:18px;
+  font-weight:600;
+}
+
+/* REVIEWS */
+.reviews{
+  background:#021d4f;
+  color:#fff;
+}
+.reviews h2{
+  color:#fff;
+  text-align:center;
+}
+.review-grid{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+.review{
+  background:rgba(139, 145, 180, 0.932);
+  padding:28px;
+  border-radius:18px;
+}
+.review span{
+  color:#ffc107;
+  font-size:18px;
+}
+
+/* MAP */
+.map-section{
+  background:#fff;
+}
+.map-box{
+  margin-top:40px;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 18px 40px rgba(0,0,0,0.15);
+  position:relative;
+}
+.map-box iframe{
+  width:100%;
+  height:420px;
+  border:0;
+}
+.map-overlay{
+  position:absolute;
+  inset:0;
+}
+.map-btn{
+  margin-top:30px;
+  display:inline-block;
+  padding:14px 34px;
+  background:#0b5ed7;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+  background:#102c66;
+  color:#fff;
+  text-align:center;
+  padding:26px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">FreshAir HVAC</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<section class="hero">
+  <h1>FreshAir HVAC Solutions, LLC</h1>
+  <p>Professional Air Conditioning & Heating Services in West Palm Beach, Florida</p>
+  <a href="tel:+15619344111" class="btn-primary">Call Now: (561) 934-4111</a>
+</section>
+
+<section class="section white">
+  <h2 style="text-align:center;">Reliable HVAC Solutions Built for Florida Homes & Businesses</h2>
+  <p style="text-align:center; max-width:900px; margin:0 auto 40px;">
+    FreshAir HVAC Solutions, LLC is a professional heating and air conditioning company serving
+    West Palm Beach and surrounding areas. We focus on long-term reliability, energy efficiency,
+    and honest workmanship — not temporary fixes.
+  </p>
+
+  <p style="text-align:center; max-width:900px; margin:0 auto 60px;">
+    Our licensed technicians handle everything from precision AC repairs and complete system
+    installations to seasonal maintenance and airflow optimization. When you choose FreshAir HVAC
+    Solutions, you’re choosing clear communication, transparent pricing, and service that respects
+    your time and property.
+  </p>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:40px;">
+    <div style="background:#82b2be; border-radius:50%; height:220px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; font-weight:600; padding:25px;">
+      Licensed & Insured<br>HVAC Company
+    </div>
+    <div style="background:#82b2be; border-radius:50%; height:220px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; font-weight:600; padding:25px;">
+      Residential & Commercial<br>Expertise
+    </div>
+    <div style="background:#82b2be; border-radius:50%; height:220px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; font-weight:600; padding:25px;">
+      Energy‑Efficient<br>System Design
+    </div>
+    <div style="background:#82b2be; border-radius:50%; height:220px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; font-weight:600; padding:25px;">
+      Fast Response &<br>Professional Support
+    </div>
+  </div>
+</section>
+
+<section class="section reviews">
+  <h2>What Our Customers Say</h2>
+  <div class="review-grid">
+    <div class="review">
+      <span>★★★★★</span>
+      <p>Excellent service! Fast response and very professional AC repair. Highly recommended.</p>
+    </div>
+    <div class="review">
+      <span>★★★★★</span>
+      <p>Technician was knowledgeable and honest. Our system runs perfectly now.</p>
+    </div>
+    <div class="review">
+      <span>★★★★★</span>
+      <p>Best HVAC company in West Palm Beach. Fair pricing and great customer service.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section map-section">
+  <h2>Visit Our Location</h2>
+  <p>4061 Royal Palm Beach Blvd, West Palm Beach, FL 33411</p>
+
+  <div class="map-box">
+    <iframe src="https://www.google.com/maps?q=4061+Royal+Palm+Beach+Blvd,+West+Palm+Beach,+FL+33411&output=embed"></iframe>
+    <a class="map-overlay" href="https://maps.app.goo.gl/hyFs8wTciarTTb9i8" target="_blank"></a>
+  </div>
+
+<a class="map-btn" href="https://maps.app.goo.gl/hyFs8wTciarTTb9i8" target="_blank">Open in Google Maps</a>
+
+</section>
+
+<footer>
+  © 2026 FreshAir HVAC Solutions, LLC | All Rights Reserved
+</footer>
+
+</body>
+</html>
